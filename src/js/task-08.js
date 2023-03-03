@@ -11,15 +11,15 @@ const ref = {
   //Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
    
 
- // ref.form.addEventListener('submit', event => {
-  //  event.preventDefault();
-  //  const {
-  //    elements: { email, password },
-  //  } = event.currentTarget;
+  ref.form.addEventListener('submit', event => {
+    event.preventDefault();
+    const {
+      elements: { email, password },
+    } = event.currentTarget;
   
-  //  if (email.value === '' || password.value === '') {
-   //   return alert('все поля должны быть заполнены');
-  //  }
-   // console.log({ Login: email.value, Password: password.value });
-   // event.currentTarget.reset();
- // });
+    if (email.value === '' || password.value === '') {
+      return alert('все поля должны быть заполнены');
+    }
+    console.log({ Login: email.value, Password: password.value });
+    event.currentTarget.reset();
+  });
