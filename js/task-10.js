@@ -35,4 +35,4 @@ function deleteBoxes() {
   ref.boxes.innerHTML = '';
 }
 
-console.log(ref.boxes);
+
