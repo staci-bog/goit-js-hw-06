@@ -24,7 +24,7 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     const newDivElem = document.createElement('div');
     newDivElem.style.height = `${30 + 10 * i}px`;
-    newDivElem.style.weight = `${30 + 10 * i}px`;
+    newDivElem.style.width = `${30 + 10 * i}px`;
     newDivElem.style.background = getRandomHexColor();
     newArray.push(newDivElem);
   }
